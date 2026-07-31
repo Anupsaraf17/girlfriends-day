@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Jerry ❤️</title>
+
+<style>
+
+body{
+    background:#fff0f5;
+    font-family:Arial;
+    text-align:center;
+}
+
+img{
+    width:300px;
+    margin:15px;
+    border-radius:20px;
+    box-shadow:0 5px 10px rgba(0,0,0,0.2);
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Jerry & Bunny ❤️</h1>
+
+<p>Enter the password to continue.</p>
+
+<input type="password" id="pass">
+
+<button onclick="checkPassword()">
+Open Gallery
+</button>
+
+<div id="gallery" style="display:none;">
+
+    <img src="YOUR_IMAGE_NAME_1.jpg">
+    <img src="YOUR_IMAGE_NAME_2.jpg">
+    <img src="YOUR_IMAGE_NAME_3.jpg">
+
+</div>
+
+<script>
+
+function checkPassword(){
+
+    let password=document.getElementById(
+        "pass"
+    ).value;
+
+    if(password==="050226"){
+
+        document.getElementById(
+            "gallery"
+        ).style.display="block";
+    }
+
+    else{
+
+        alert("Wrong password.");
+    }
+}
+
+</script>
+
+</body>
+
+</html>
