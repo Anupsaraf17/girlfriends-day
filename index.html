@@ -58,10 +58,16 @@
 </head>
 
 <body>
-    <audio id="music" loop>
+    
+<audio id="music" autoplay loop>
     <source src="Apna Bana Le (Lyrics) - Bhediya _ Varun Dhawan, Kriti Sanon_ Sachin-Jigar, Arijit Singh, Amitabh B.mp3" type="audio/mpeg">
 </audio>
 
+<script>
+window.onload = function () {
+    document.getElementById("music").play();
+};
+</script>
 <button onclick="document.getElementById('music').play()">
     🎵 Play Our Song ❤️
 </button>
