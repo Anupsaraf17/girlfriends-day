@@ -102,6 +102,7 @@ window.onload = function() {
         <h1>I LOVE YOU FOREVER ❤️</h1>
 
         <h2>Jerry ❤️ Bunny</h2>
+        <h3 id="loveCounter"></h3>
 
         <p>
             Thank you for being a part of my life.
@@ -118,24 +119,19 @@ window.onload = function() {
 const startDate = new Date("2026-02-05T00:00:00");
 
 function updateCounter() {
-
     const now = new Date();
     const difference = now - startDate;
 
-    const days = Math.floor(difference / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((difference / (1000 * 60 * 60)) % 24);
-    const minutes = Math.floor((difference / (1000 * 60)) % 60);
-    const seconds = Math.floor((difference / 1000) % 60);
+    const days = Math.floor(
+        difference / (1000 * 60 * 60 * 24)
+    );
 
     document.getElementById("loveCounter").innerHTML =
-        days + " days, " +
-        hours + " hours, " +
-        minutes + " minutes, " +
-        seconds + " seconds ❤️";
+        days + " days and counting ❤️";
 }
 
-setInterval(updateCounter, 1000);
 updateCounter();
+setInterval(updateCounter, 1000);
 </script>
 </body>
 
