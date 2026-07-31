@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Happy Girlfriend's Day ❤️</title>
+
+    <style>
+
+        body{
+            margin:0;
+            padding:0;
+            background:linear-gradient(135deg,#ffd6e7,#fff);
+            font-family:Arial;
+            overflow-x:hidden;
+        }
+
+        .container{
+            text-align:center;
+            margin-top:100px;
+            padding:30px;
+        }
+
+        h1{
+            color:#ff2d55;
+            font-size:60px;
+        }
+
+        h2{
+            color:#444;
+        }
+
+        .btn{
+            padding:15px 30px;
+            border:none;
+            border-radius:30px;
+            background:#ff2d55;
+            color:white;
+            cursor:pointer;
+            font-size:18px;
+        }
+
+        .heart{
+            position:fixed;
+            top:-20px;
+            animation:fall 8s linear infinite;
+        }
+
+        @keyframes fall{
+            0%{
+                transform:translateY(-50px);
+            }
+            100%{
+                transform:translateY(110vh);
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Happy Girlfriend's Day ❤️</h1>
+
+<h2>Jerry</h2>
+
+<p>It's your Bunny wishing you a Happy Girlfriend's Day.</p>
+
+<p>I love you forever. ❤️</p>
+
+<button class="btn">Open My Heart ❤️</button>
+
+</div>
+
+<script>
+
+for(let i=0;i<50;i++){
+
+    let heart=document.createElement("div");
+
+    heart.innerHTML="❤️";
+
+    heart.className="heart";
+
+    heart.style.left=Math.random()*100+"vw";
+
+    heart.style.animationDuration=(Math.random()*5+5)+"s";
+
+    document.body.appendChild(heart);
+}
+
+</script>
+
+</body>
+</html>
