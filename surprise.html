@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Forever ❤️</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #ffd6e7, #ffffff);
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .container {
+            margin-top: 180px;
+        }
+
+        h1 {
+            color: #ff2d55;
+            font-size: 60px;
+        }
+
+        h2 {
+            color: #444;
+        }
+
+        .heart {
+            position: absolute;
+            font-size: 30px;
+            animation: float 8s linear infinite;
+        }
+
+        @keyframes float {
+
+            0% {
+                transform: translateY(100vh);
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateY(-120vh);
+                opacity: 0;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>I LOVE YOU FOREVER ❤️</h1>
+
+        <h2>Jerry ❤️ Bunny</h2>
+
+        <p>
+            Thank you for being a part of my life.
+        </p>
+
+        <p>
+            Happy Girlfriend's Day.
+        </p>
+
+    </div>
+
+    <script>
+
+        for (let i = 0; i < 50; i++) {
+
+            const heart = document.createElement("div");
+
+            heart.className = "heart";
+
+            heart.innerHTML = "❤️";
+
+            heart.style.left = Math.random() * 100 + "vw";
+
+            heart.style.animationDuration =
+                (Math.random() * 5 + 4) + "s";
+
+            document.body.appendChild(heart);
+        }
+
+    </script>
+
+</body>
+
+</html>
